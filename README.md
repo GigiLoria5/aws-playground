@@ -1,2 +1,12 @@
-# aws-playground
-A collection of simple, practical, and sometimes silly AWS examples used to learn, test, and explore AWS services.
+# AWS Playground
+
+**AWS Playground** is a sandbox repository filled with sample code and mini-projects to learn and experiment with various AWS services. This collection is for AWS beginners or anyone wanting to test concepts, experiment, or refer to code examples. Most examples are straightforward, minimal, and even a little bit silly.
+
+## Examples Included
+
+- **EC2**: Basics of launching, connecting to, and managing EC2 instances.
+- **S3**: coming soon...
+- **RDS**: coming soon...
+- **DynamoDB**: coming soon...
+- **Lambda**: coming soon...
+- **And more...** as I explore and add new examples!
