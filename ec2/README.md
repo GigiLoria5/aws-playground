@@ -4,16 +4,16 @@ This example demonstrates how to set up a basic web server on an EC2 instance us
 
 ## Step 1: Launch a New EC2 Instance
 
-- Go to EC2 and launch a new instance.
+- Go to EC2 dashboard and launch a new instance.
 - Setup everything with the default configurations (free-tier options).
-- Under Network settings tick the `Allow HTTP traffic from the internet` option (or manually create a security group with free inbound access to **port 80**).
-- In the Advanced details section, locate the User data field. Copy and paste the content of `user-data-web-server.sh` into it. This will automatically run the script on instance launch and set up the web server.
+- Under **Network settings** tick the `Allow HTTP traffic from the internet` option (or manually create a security group with free inbound access to **port 80**).
+- In the **Advanced details** section, locate the **User data** field. Copy and paste the content of `user-data-web-server.sh` into it. This will automatically run the script on instance launch and set up the web server.
 - Complete the instance configuration steps.
 
 ## Step 2: Access the Web Server
 
-- After launching, navigate to the Instances page and wait for the new instance to reach the running state.
-- Copy the Public IPv4 address of your instance.
+- After launching, navigate to the **Instances** page and wait for the new instance to reach the running state.
+- Copy the **Public IPv4 address** of your instance.
 - Open a browser and go to `http://<instance-public-ip>`. You should see a default webpage indicating your instance availibility zone.
 
 # [2] Auto Scale and Load Balance your Application
@@ -22,24 +22,24 @@ This example demonstrates how to set up auto-scaling and load balancing for a we
 
 ## Step 1: Create a Launch Template
 
-- Go to the EC2 dashboard, navigate to Launch Templates, and create a new launch template. Follow the steps outlined in [Step 1: Launch a New EC2 Instance](#step-1-launch-a-new-ec2-instance) to configure the instance settings, ensuring that the `user-data-web-server.sh` script is included in the User Data section.
+- Go to the EC2 dashboard, navigate to **Launch Templates**, and create a new launch template. Follow the steps outlined in [Step 1: Launch a New EC2 Instance](#step-1-launch-a-new-ec2-instance) to configure the instance settings, ensuring that the `user-data-web-server.sh` script is included in the User Data section.
 
 ## Step 2: Create an Auto Scaling Group
 
-- After creating the launch template, proceed to create a new Auto Scaling group
+- After creating the launch template, proceed to create a new **Auto Scaling group**
   - Select the launch template you just created.
   - Set the desired, minimum, and maximum capacities to 2.
-  - Choose two Availability Zones (AZs) in the network options.
+  - Choose two Availability Zones in the network options.
   - Keep all other settings at their default values.
-- Within a few minutes, the Auto Scaling group should launch two new EC2 instances. These instances will be distributed evenly across the two selected Availability Zones.
+- Within a few minutes, the **Auto Scaling group** should launch two new EC2 instances. These instances will be distributed evenly across the two selected Availability Zones.
 
 ## Step 3: Create a Target Group
 
-- In the EC2 dashboard, navigate to the Load Balancing section and create a new target group. Select Instances as the target type and choose HTTP as the protocol. During the target registration step, **do not add any instances manually**; they will be added dynamically by the Auto Scaling group.
+- In the EC2 dashboard, navigate to the **Load Balancing** section and create a new target group. Select **Instances** as the target type and choose **HTTP** as the protocol. During the target registration step, **do not add any instances manually**; they will be added dynamically by the Auto Scaling group.
 
 ## Step 4: Create an Application Load Balancer (ALB)
 
-- After setting up the target group, create an Application Load Balancer. Ensure it is Internet-facing and select the same Availability Zones that you used for the Auto Scaling group in the network mapping section.
+- After setting up the target group, create an **Application Load Balancer**. Ensure it is **Internet-facing** and select the same Availability Zones that you used for the Auto Scaling group in the network mapping section.
 - For the security group, select (or create) a security group that allows HTTP traffic on port 80.
 - Under the **Listeners and Routing** section, configure the listener to use HTTP on port 80 and set the previously created target group as the destination. This configuration ensures that the load balancer routes incoming traffic to the instances in your target group.
 
@@ -67,7 +67,7 @@ This example will enhance the setup from [2](#2-auto-scale-and-load-balance-your
 
 ## Step 2: Create a Dynamic Scaling Policy
 
-- In your Auto Scaling group, go to Automatic Scaling > Create Dynamic Scaling Policy and configure the policy as follows:
+- In your Auto Scaling group, go to **Automatic Scaling** > **Create Dynamic Scaling Policy** and configure the policy as follows:
   - Select **Target Tracking Policy**.
   - Choose **Application Load Balancer Request Count per Target** as the metric.
   - Set your target group as the metric source.
@@ -80,9 +80,9 @@ To test dynamic scaling, use AWS CloudShell or your terminal to simulate increas
 
 ## Step 4: Monitor Scaling Behavior
 
-- Go to Auto Scaling Groups > Activity tab. You should see new instances being launched automatically based on demand.
+- Go to **Auto Scaling Groups** > **Activity** tab. You should see new instances being launched automatically based on demand.
 - In the target group, verify that these new instances have been added as targets.
-- Check CloudWatch Alarms since one of them should be triggered, reflecting the increased request count.
+- Check **CloudWatch** alarms since one of them should be triggered, reflecting the increased request count.
 - Visit the web server using the load balancer DNS name to see traffic being balanced across the new instances and AZs.
 
 ## Step 5: Scale-In Behavior
