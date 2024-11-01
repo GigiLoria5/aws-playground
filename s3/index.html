@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Image Gallery</title>
+    <style>
+        /* Resetting some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to bottom right, #8ec5fc, #e0c3fc);
+            color: #333;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #444;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            max-width: 600px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="image1.jpg" alt="A scenic landscape with mountains and a river">
+        <img src="image2.jpg" alt="A close-up of vibrant, colorful flowers in bloom">
+        <img src="image3.jpg" alt="A sunset view over the ocean">
+    </div>
+
+    <p>Welcome to my gallery! Here are some beautiful scenes captured from around the world, each representing the
+        natural beauty of landscapes, flora, and sunsets.</p>
+</body>
+
+</html>
