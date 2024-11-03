@@ -1,0 +1,454 @@
+{
+    "items": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item001"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T10:00:00Z"
+                    },
+                    "title": {
+                        "S": "Wireless Mouse"
+                    },
+                    "description": {
+                        "S": "A comfortable wireless mouse with ergonomic design."
+                    },
+                    "category": {
+                        "S": "Electronics"
+                    },
+                    "price": {
+                        "N": "29.99"
+                    },
+                    "quantity": {
+                        "N": "150"
+                    },
+                    "rating": {
+                        "N": "4.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item002"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T11:00:00Z"
+                    },
+                    "title": {
+                        "S": "Bluetooth Headphones"
+                    },
+                    "description": {
+                        "S": "High-quality sound with noise-canceling features."
+                    },
+                    "category": {
+                        "S": "Electronics"
+                    },
+                    "price": {
+                        "N": "89.99"
+                    },
+                    "quantity": {
+                        "N": "80"
+                    },
+                    "rating": {
+                        "N": "4.8"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item003"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T12:00:00Z"
+                    },
+                    "title": {
+                        "S": "Mechanical Keyboard"
+                    },
+                    "description": {
+                        "S": "A mechanical keyboard with customizable RGB lighting."
+                    },
+                    "category": {
+                        "S": "Electronics"
+                    },
+                    "price": {
+                        "N": "69.99"
+                    },
+                    "quantity": {
+                        "N": "120"
+                    },
+                    "rating": {
+                        "N": "4.7"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item004"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T13:00:00Z"
+                    },
+                    "title": {
+                        "S": "Laptop Stand"
+                    },
+                    "description": {
+                        "S": "Adjustable laptop stand for better ergonomics."
+                    },
+                    "category": {
+                        "S": "Accessories"
+                    },
+                    "price": {
+                        "N": "25.00"
+                    },
+                    "quantity": {
+                        "N": "200"
+                    },
+                    "rating": {
+                        "N": "4.3"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item005"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T14:00:00Z"
+                    },
+                    "title": {
+                        "S": "HDMI Cable"
+                    },
+                    "description": {
+                        "S": "High-speed HDMI cable for clear video and audio."
+                    },
+                    "category": {
+                        "S": "Accessories"
+                    },
+                    "price": {
+                        "N": "15.99"
+                    },
+                    "quantity": {
+                        "N": "500"
+                    },
+                    "rating": {
+                        "N": "4.6"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item006"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T15:00:00Z"
+                    },
+                    "title": {
+                        "S": "USB-C Charger"
+                    },
+                    "description": {
+                        "S": "Fast charging USB-C charger compatible with many devices."
+                    },
+                    "category": {
+                        "S": "Accessories"
+                    },
+                    "price": {
+                        "N": "19.99"
+                    },
+                    "quantity": {
+                        "N": "300"
+                    },
+                    "rating": {
+                        "N": "4.4"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item007"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T16:00:00Z"
+                    },
+                    "title": {
+                        "S": "Smartwatch"
+                    },
+                    "description": {
+                        "S": "A smartwatch with health tracking features."
+                    },
+                    "category": {
+                        "S": "Wearables"
+                    },
+                    "price": {
+                        "N": "199.99"
+                    },
+                    "quantity": {
+                        "N": "60"
+                    },
+                    "rating": {
+                        "N": "4.9"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item008"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T17:00:00Z"
+                    },
+                    "title": {
+                        "S": "Fitness Tracker"
+                    },
+                    "description": {
+                        "S": "Track your steps and heart rate with this sleek device."
+                    },
+                    "category": {
+                        "S": "Wearables"
+                    },
+                    "price": {
+                        "N": "49.99"
+                    },
+                    "quantity": {
+                        "N": "150"
+                    },
+                    "rating": {
+                        "N": "4.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item009"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T18:00:00Z"
+                    },
+                    "title": {
+                        "S": "Portable SSD"
+                    },
+                    "description": {
+                        "S": "Fast and compact SSD for data storage on the go."
+                    },
+                    "category": {
+                        "S": "Storage"
+                    },
+                    "price": {
+                        "N": "99.99"
+                    },
+                    "quantity": {
+                        "N": "90"
+                    },
+                    "rating": {
+                        "N": "4.8"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item010"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T19:00:00Z"
+                    },
+                    "title": {
+                        "S": "Gaming Mouse Pad"
+                    },
+                    "description": {
+                        "S": "Large gaming mouse pad for precision control."
+                    },
+                    "category": {
+                        "S": "Accessories"
+                    },
+                    "price": {
+                        "N": "19.99"
+                    },
+                    "quantity": {
+                        "N": "250"
+                    },
+                    "rating": {
+                        "N": "4.6"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item011"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T20:00:00Z"
+                    },
+                    "title": {
+                        "S": "Bluetooth Speaker"
+                    },
+                    "description": {
+                        "S": "Portable Bluetooth speaker with high-quality sound."
+                    },
+                    "category": {
+                        "S": "Audio"
+                    },
+                    "price": {
+                        "N": "59.99"
+                    },
+                    "quantity": {
+                        "N": "110"
+                    },
+                    "rating": {
+                        "N": "4.7"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item012"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T21:00:00Z"
+                    },
+                    "title": {
+                        "S": "Webcam"
+                    },
+                    "description": {
+                        "S": "1080p HD webcam for clear video calls."
+                    },
+                    "category": {
+                        "S": "Accessories"
+                    },
+                    "price": {
+                        "N": "49.99"
+                    },
+                    "quantity": {
+                        "N": "75"
+                    },
+                    "rating": {
+                        "N": "4.4"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item013"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T22:00:00Z"
+                    },
+                    "title": {
+                        "S": "Wireless Charger"
+                    },
+                    "description": {
+                        "S": "Fast wireless charger for compatible devices."
+                    },
+                    "category": {
+                        "S": "Accessories"
+                    },
+                    "price": {
+                        "N": "29.99"
+                    },
+                    "quantity": {
+                        "N": "150"
+                    },
+                    "rating": {
+                        "N": "4.6"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item014"
+                    },
+                    "created_at": {
+                        "S": "2024-11-01T23:00:00Z"
+                    },
+                    "title": {
+                        "S": "Camera Tripod"
+                    },
+                    "description": {
+                        "S": "Sturdy tripod for stable photography."
+                    },
+                    "category": {
+                        "S": "Photography"
+                    },
+                    "price": {
+                        "N": "39.99"
+                    },
+                    "quantity": {
+                        "N": "80"
+                    },
+                    "rating": {
+                        "N": "4.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {
+                        "S": "item015"
+                    },
+                    "created_at": {
+                        "S": "2024-11-02T00:00:00Z"
+                    },
+                    "title": {
+                        "S": "Action Camera"
+                    },
+                    "description": {
+                        "S": "Compact action camera for capturing adventures."
+                    },
+                    "category": {
+                        "S": "Photography"
+                    },
+                    "price": {
+                        "N": "149.99"
+                    },
+                    "quantity": {
+                        "N": "40"
+                    },
+                    "rating": {
+                        "N": "4.8"
+                    }
+                }
+            }
+        }
+    ]
+}
